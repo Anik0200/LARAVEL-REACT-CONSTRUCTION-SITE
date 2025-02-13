@@ -1,0 +1,431 @@
+//Common Start
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+$primary-color: #fe538d;
+$secondary-color: #ffb703;
+$text-black: #000000;
+$text-white: #ffffff;
+$dark-bakground: #000000;
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+.bg-light {
+  background-color: #e3e3e3;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 15px;
+}
+
+.btn-primary-custom {
+  background-color: $primary-color;
+  border: none !important;
+  padding: 15px 15px;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $secondary-color;
+    border: none !important;
+  }
+}
+
+.btn-sm {
+  padding: 6px 8px !important;
+}
+
+.btn-secondary-custom {
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  padding: 15px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+}
+
+.section-header {
+  span {
+    color: $primary-color;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  h2 {
+    color: $secondary-color;
+    font-size: 2em;
+    margin: 10px 0 10px 0;
+  }
+
+  p {
+    color: $text-black;
+    font-size: 20px;
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+//Common End
+
+// Navbar Start
+nav {
+  .nav-link {
+    color: $primary-color;
+    font-weight: 500;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+
+    span {
+      color: $primary-color;
+    }
+  }
+}
+// Navbar End
+
+//Footer Start
+footer {
+  padding: 50px 0 50px 0;
+  background: $dark-bakground;
+
+  span {
+    color: $secondary-color;
+    font-size: 20px;
+    margin-bottom: 20px !important;
+    display: block;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .footer-text,
+  a {
+    font-size: 16px;
+    color: $text-white;
+  }
+}
+//Footer End
+
+// Section One Start
+.section-1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  no-repeat center;
+  color: $text-white;
+  padding: 152px 0 152px 0;
+
+  h1 {
+    font-size: 2em;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  span {
+    color: $secondary-color;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
+// Section One End
+
+// Section Two Start
+.section-2 {
+  padding: 50px 0 50px 0;
+
+  img {
+    border-radius: 40px;
+  }
+
+  span {
+    color: $primary-color;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  h2 {
+    color: $secondary-color;
+    font-size: 2em;
+    margin-top: 5px;
+  }
+
+  p {
+    color: $text-black;
+    margin-top: 10px;
+  }
+}
+// Section Two End
+
+// Section Three Start
+.section-3 {
+  padding: 50px 0 50px 0;
+  color: $text-white;
+
+  .item {
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+      font-size: 1.5em;
+      color: $secondary-color;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    &:hover {
+      .service-body {
+        transform: translateY(0%);
+
+        .service-content {
+          opacity: 1;
+        }
+      }
+    }
+
+    .service-image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        border-radius: 40px;
+        aspect-ratio: 1/1.2;
+        object-fit: cover;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 40px;
+        background: #00000076;
+      }
+    }
+
+    .service-body {
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      bottom: 40px;
+      transform: translateY(80%);
+      transition: all 0.4s ease-in-out;
+
+      .service-content {
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+      }
+    }
+  }
+}
+// Section Three End
+
+// Section Four Start
+.section-4 {
+  padding: 50px 0 50px 0;
+
+  .card {
+    h3 {
+      font-size: 1.5em;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 16px;
+      color: $text-black;
+    }
+  }
+}
+// Section Four End
+
+// Section Five Start
+.section-5 {
+  padding: 50px 0 50px 0;
+
+  .swiper {
+    padding: 25px 25px 50px 25px;
+
+    .swiper-pagination-bullet-active {
+      background: $secondary-color;
+    }
+  }
+
+  .rating {
+    color: $secondary-color;
+  }
+
+  .card-content {
+    border-bottom: 1px solid #e3e3e3;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .card-user {
+    img {
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+// Section Five End
+
+// Section Six Start
+.section-6 {
+  padding: 50px 0 50px 0;
+  cursor: pointer;
+
+  .card {
+    border-radius: 40px;
+
+    &:hover h2 {
+      color: $primary-color;
+    }
+
+    img {
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: $text-black;
+    }
+  }
+}
+// Section Six End
+
+// Section about Start
+.about-section-team {
+  padding: 50px 0 50px 0;
+
+  .card {
+    border-radius: 40px !important;
+
+    .card-img-top {
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover !important;
+      display: block !important;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: $text-black;
+    }
+  }
+}
+// Section about End
+
+// Section Contact Start
+.section-contact {
+  padding: 50px 0 50px 0;
+
+  .card1 {
+    h4 {
+      font-size: 1.2em;
+      color: $text-black;
+    }
+
+    p {
+      font-size: 16px;
+      color: $text-black;
+    }
+  }
+}
+// Section Contact End
+
+// Section Logo Start
+.section-login {
+  padding: 50px 0 50px 0;
+
+  .card {
+    border-radius: 10px;
+
+    h2 {
+      font-size: 1.5em;
+      color: $primary-color;
+    }
+
+    .card-body {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+// Section Logo End
+
+.section-dashboard {
+  .card {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  }
+
+  h4 {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  a {
+    color: $secondary-color;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

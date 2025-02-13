@@ -1,0 +1,213 @@
+$primary-color: #fe538d;
+$secondary-color: #ffb703;
+$text-black: #000000;
+$text-white: #ffffff;
+
+@media (max-width: 576px) {
+  nav {
+    .logo {
+      font-size: 15px;
+    }
+  }
+
+  footer {
+    padding: 30px 0 30px 0;
+
+    span {
+      font-size: 18px;
+      margin-bottom: 10px !important;
+      display: block;
+    }
+
+    .footer-text,
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    padding: 12px 18px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .section-header {
+    margin-bottom: 20px;
+
+    span {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      margin: 5px 0 5px 0;
+    }
+
+    p {
+      font-size: 14px;
+      width: auto;
+    }
+  }
+
+  .section-1 {
+    padding: 110px 0 110px 0;
+
+    h1 {
+      font-size: 30px;
+      width: auto;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .section-2 {
+    padding: 40px 0 40px 0;
+
+    img {
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .section-3 {
+    padding: 20px 0 20px 0;
+
+    .item {
+      h3 {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .section-4 {
+    padding: 20px 0 20px 0;
+
+    .card {
+      h3 {
+        font-size: 1em;
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 14px;
+        color: $text-black;
+      }
+    }
+  }
+
+  .section-5 {
+    padding: 20px 0 20px 0;
+
+    .swiper {
+      padding: 5px 20px 50px 20px;
+    }
+
+    .card-content {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .card-user {
+      h3 {
+        font-size: 1em;
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .section-6 {
+    padding: 20px 0 20px 0;
+
+    .card {
+      border-radius: 30px;
+
+      img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .about-section-team {
+    padding: 20px 0 20px 0;
+
+    .card {
+      border-radius: 30px !important;
+
+      .card-img-top {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover !important;
+        display: block !important;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .section-contact {
+    padding: 20px 0 20px 0;
+
+    .card1 {
+      h4 {
+        font-size: 1em;
+        color: $text-black;
+      }
+
+      p {
+        font-size: 14px;
+        color: $text-black;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .section-2 {
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}

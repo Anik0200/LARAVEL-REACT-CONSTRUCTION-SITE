@@ -1,0 +1,46 @@
+$primary-color: #fe538d;
+$secondary-color: #ffb703;
+$text-black: #000000;
+$text-white: #ffffff;
+
+.Hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../inages/hero.jpg") no-repeat center;
+  color: $text-white;
+  padding: 80px 0 80px 0;
+
+  h1 {
+    font-size: 2em;
+    width: 400px;
+  }
+
+  span {
+    color: $secondary-color;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 18px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Hero {
+    padding: 50px 0 50px 0;
+
+    h1 {
+      font-size: 30px;
+      width: auto;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      width: auto;
+    }
+  }
+}
